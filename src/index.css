@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --x :45deg;
+    --dark-bg: #1d2123;
+    --gold: rgba(215, 122, 0, 0.837);
+    --magenta: #ff0074;
+    --dark-magenta: #230314;
+    --dark-blue: #080D17FF;
+    --dark-gold: #130c07;
+    --dark-font: #101010;
+    --light-font: #e0e0e0;
+  }
+  

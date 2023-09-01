@@ -1,0 +1,161 @@
+/* import fonts */
+
+@font-face {
+  font-family: Mont;
+  src: url("./assets/fonts/Mont-Black.eot") format("embedded-opentype"),
+    url("./assets/fonts/Mont-Black.woff2") format("woff2"),
+    url("./assets/fonts/Mont-Black.woff") format("woff"),
+    url("./assets/fonts/Mont-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Mont;
+  src: url("./assets/fonts/Mont-Bold.eot") format("embedded-opentype"),
+    url("./assets/fonts/Mont-Bold.woff2") format("woff2"),
+    url("./assets/fonts/Mont-Bold.woff") format("woff"),
+    url("./assets/fonts/Mont-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Mont;
+  src: url("./assets/fonts/Mont-Light.eot") format("embedded-opentype"),
+    url("./assets/fonts/Mont-Light.woff2") format("woff2"),
+    url("./assets/fonts/Mont-Light.woff") format("woff"),
+    url("./assets/fonts/Mont-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Mont;
+  src: url("./assets/fonts/Mont-Regular.eot") format("embedded-opentype"),
+    url("./assets/fonts/Mont-Regular.woff2") format("woff2"),
+    url("./assets/fonts/Mont-Regular.woff") format("woff"),
+    url("./assets/fonts/Mont-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Mont;
+  src: url("./assets/fonts/Mont-SemiBold.eot") format("embedded-opentype"),
+    url("./assets/fonts/Mont-SemiBold.woff2") format("woff2"),
+    url("./assets/fonts/Mont-SemiBold.woff") format("woff"),
+    url("./assets/fonts/Mont-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* global css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  direction: ltr;
+}
+
+html {
+  scroll-behavior: smooth !important;
+}
+
+body, main {
+  font-family: Mont, sans-serif;
+  width: 100% !important;
+  overflow-x: hidden;
+  font-weight: bold;
+  background-color: var(--dark-bg);
+  color: var(--light-font);
+}
+
+
+img {
+  -webkit-user-drag: none;
+}
+
+.flex-hz {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-vr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  padding: 0.6vw 0.8vw;
+  border: none;
+  outline: none;
+  border-radius: 0.8vw;
+  min-width: 1vw;
+  font-family: EncodeSansExpanded-SemiBold, sans-serif;
+  font-size: 0.9vw;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.btn:hover {
+  /*box-shadow: 0 0 0.4vw rgba(255, 255, 255, 0.4);*/
+}
+
+.btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+.title::before {
+  content: "";
+  width: 0;
+  top: 120%;
+  height: 0.2vw;
+  background: var(--magenta);
+  position: absolute;
+  transition: all .6s;
+  -webkit-transition: all .6s;
+  -moz-transition: all .6s;
+  -ms-transition: all .6s;
+  -o-transition: all .6s;
+}
+h1.aos-animate:before {
+  width: 110% !important;
+}
+
+
+::-webkit-scrollbar {
+  width: 0.35vw;
+  background-color: silver;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 0.5vw;
+  background-color: var(--gold);
+  box-shadow: 0 0 0.6vw black;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--light-font);
+}
+
+/* @media screen and (max-width: 992px) {
+  div#root {
+      width: 100 !important;
+  }
+} */
